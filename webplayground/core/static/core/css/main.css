@@ -1,0 +1,95 @@
+body {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15)
+    ),
+    url('../img/FONDO-DSII.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+:root {
+  --color-principal: #0d6efd;
+  --color-secundario: #f8f9fa;
+  --color-fondo-transparente: rgba(0, 0, 0, 0.6);
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px #000;
+  color: #93a1f3;
+}
+
+.navbar {
+  background: linear-gradient(to right, #060d59, #2b0765);
+  padding: 1rem;
+  border-bottom: 7px solid #0e0e0e;
+}
+
+.navbar-brand {
+  font-size: 1.9rem;
+  font-weight: 600;
+    text-shadow: 1px 1px 4px #cdcbcb;
+  color: #3eb82d !important;
+}
+
+a.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+a.nav-link:hover {
+  color: #ffc107 !important;
+  transform: scale(1.1);
+}
+
+.container {
+  background-color: var(--color-fondo-transparente);
+  padding: 2rem;
+  border-radius: 20px;
+  margin-top: 2rem;
+  box-shadow: 0px 0px 15px rgba(193, 152, 152, 0.1);
+  animation: fadeIn 1s ease-in;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: #000000cc;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
